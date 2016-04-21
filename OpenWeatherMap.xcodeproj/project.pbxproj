@@ -13,6 +13,13 @@
 		B1500DC51CC92F1C00897656 /* OpenWeatherMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B1500DC31CC92F1C00897656 /* OpenWeatherMap.xcdatamodeld */; };
 		B1500DC71CC92F1C00897656 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1500DC61CC92F1C00897656 /* Assets.xcassets */; };
 		B1500DCA1CC92F1C00897656 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1500DC81CC92F1C00897656 /* LaunchScreen.storyboard */; };
+		B1500DD41CC945B100897656 /* WeatherListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1500DD31CC945B100897656 /* WeatherListViewController.swift */; };
+		B1500DD61CC949EE00897656 /* WeatherListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1500DD51CC949EE00897656 /* WeatherListInteractor.swift */; };
+		B1500DD81CC94B1600897656 /* GetNewWeatherItemWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1500DD71CC94B1600897656 /* GetNewWeatherItemWorker.swift */; };
+		B1500DDA1CC94C1000897656 /* WeatherListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1500DD91CC94C1000897656 /* WeatherListPresenter.swift */; };
+		B1500DDC1CC94C9A00897656 /* WeatherListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1500DDB1CC94C9A00897656 /* WeatherListConfigurator.swift */; };
+		B1500DDE1CC94CFE00897656 /* WeatherListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1500DDD1CC94CFD00897656 /* WeatherListRouter.swift */; };
+		B1500DE01CC94DE600897656 /* WeatherListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1500DDF1CC94DE600897656 /* WeatherListModels.swift */; };
 		CFEDFA2678BB4B759C41F3E1 /* Pods_OpenWeatherMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1CB829DEAEB657E5E9D353 /* Pods_OpenWeatherMap.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +33,13 @@
 		B1500DC61CC92F1C00897656 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1500DC91CC92F1C00897656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1500DCB1CC92F1C00897656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1500DD31CC945B100897656 /* WeatherListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherListViewController.swift; sourceTree = "<group>"; };
+		B1500DD51CC949EE00897656 /* WeatherListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherListInteractor.swift; sourceTree = "<group>"; };
+		B1500DD71CC94B1600897656 /* GetNewWeatherItemWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetNewWeatherItemWorker.swift; sourceTree = "<group>"; };
+		B1500DD91CC94C1000897656 /* WeatherListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherListPresenter.swift; sourceTree = "<group>"; };
+		B1500DDB1CC94C9A00897656 /* WeatherListConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherListConfigurator.swift; sourceTree = "<group>"; };
+		B1500DDD1CC94CFD00897656 /* WeatherListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherListRouter.swift; sourceTree = "<group>"; };
+		B1500DDF1CC94DE600897656 /* WeatherListModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherListModels.swift; sourceTree = "<group>"; };
 		BCF9F45093E2CA829DB34EB3 /* Pods-OpenWeatherMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenWeatherMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenWeatherMap/Pods-OpenWeatherMap.release.xcconfig"; sourceTree = "<group>"; };
 		E3590946D540414E9BDB6A45 /* Pods-OpenWeatherMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenWeatherMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenWeatherMap/Pods-OpenWeatherMap.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +94,7 @@
 		B1500DBB1CC92F1C00897656 /* OpenWeatherMap */ = {
 			isa = PBXGroup;
 			children = (
+				B1500DD11CC9413000897656 /* Scenes */,
 				B1500DBC1CC92F1C00897656 /* AppDelegate.swift */,
 				B1500DBE1CC92F1C00897656 /* ViewController.swift */,
 				B1500DC01CC92F1C00897656 /* Main.storyboard */,
@@ -89,6 +104,28 @@
 				B1500DC31CC92F1C00897656 /* OpenWeatherMap.xcdatamodeld */,
 			);
 			path = OpenWeatherMap;
+			sourceTree = "<group>";
+		};
+		B1500DD11CC9413000897656 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B1500DD21CC941B900897656 /* WeatherList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B1500DD21CC941B900897656 /* WeatherList */ = {
+			isa = PBXGroup;
+			children = (
+				B1500DD71CC94B1600897656 /* GetNewWeatherItemWorker.swift */,
+				B1500DD51CC949EE00897656 /* WeatherListInteractor.swift */,
+				B1500DD91CC94C1000897656 /* WeatherListPresenter.swift */,
+				B1500DDB1CC94C9A00897656 /* WeatherListConfigurator.swift */,
+				B1500DDD1CC94CFD00897656 /* WeatherListRouter.swift */,
+				B1500DDF1CC94DE600897656 /* WeatherListModels.swift */,
+				B1500DD31CC945B100897656 /* WeatherListViewController.swift */,
+			);
+			path = WeatherList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,9 +250,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1500DE01CC94DE600897656 /* WeatherListModels.swift in Sources */,
+				B1500DD61CC949EE00897656 /* WeatherListInteractor.swift in Sources */,
 				B1500DC51CC92F1C00897656 /* OpenWeatherMap.xcdatamodeld in Sources */,
+				B1500DDA1CC94C1000897656 /* WeatherListPresenter.swift in Sources */,
+				B1500DD41CC945B100897656 /* WeatherListViewController.swift in Sources */,
+				B1500DD81CC94B1600897656 /* GetNewWeatherItemWorker.swift in Sources */,
 				B1500DBF1CC92F1C00897656 /* ViewController.swift in Sources */,
 				B1500DBD1CC92F1C00897656 /* AppDelegate.swift in Sources */,
+				B1500DDC1CC94C9A00897656 /* WeatherListConfigurator.swift in Sources */,
+				B1500DDE1CC94CFE00897656 /* WeatherListRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

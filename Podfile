@@ -6,6 +6,7 @@ use_frameworks!
 target 'OpenWeatherMap' do
 
 pod 'Alamofire', '~> 3.3'
+pod 'SwiftyJSON', '~> 2.3'
 
 end
 
