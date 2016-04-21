@@ -12,11 +12,11 @@
 import UIKit
 
 protocol WeatherListInteractorInput {
-  func doSomething(request: WeatherListRequest)
+    func doSomething(request: WeatherListRequest)
 }
 
 protocol WeatherListInteractorOutput {
-  func presentSomething(response: WeatherListResponse)
+    func presentSomething(response: WeatherListResponse)
 }
 
 class WeatherListInteractor: WeatherListInteractorInput {

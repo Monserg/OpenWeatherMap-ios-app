@@ -28,12 +28,14 @@ class WeatherListViewController: UITableViewController, WeatherListViewControlle
     // MARK: - Constructors -
     override func awakeFromNib() {
         super.awakeFromNib()
-    
-        //WeatherListConfigurator.sharedInstance.configure(self)
+        print("WeatherListViewController: awakeFromNib run.")
+
+        WeatherListConfigurator.sharedInstance.configure(self)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("WeatherListViewController: viewDidLoad run.")
     
         doSomethingOnLoad()
     }

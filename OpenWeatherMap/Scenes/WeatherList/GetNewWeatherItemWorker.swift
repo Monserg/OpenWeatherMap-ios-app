@@ -19,6 +19,8 @@ class GetNewWeatherItemWorker {
 
     // MARK: - GET API -
     func doSomeWork() {
+        print("GetNewWeatherItemWorker: doSomeWork run.")
+
         // NOTE: - Alamofire -
         urlAPI += keyAPI
         
